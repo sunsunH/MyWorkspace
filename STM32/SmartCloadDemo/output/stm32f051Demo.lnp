@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"..\output\startup_stm32f051.o"
+"..\output\system_stm32f0xx.o"
+"..\output\stm32f0xx_it.o"
+"..\output\main.o"
+"..\output\stm32f0xx_rcc.o"
+"..\output\stm32f0xx_gpio.o"
+"..\output\stm32f0xx_usart.o"
+"..\output\stm32f0xx_exti.o"
+"..\output\stm32f0xx_misc.o"
+"..\output\stm32f0xx_syscfg.o"
+"..\output\stm32f0xx_tim.o"
+"..\output\led.o"
+"..\output\systick.o"
+"..\output\uart.o"
+"..\output\key.o"
+"..\output\time.o"
+"..\output\dht11.o"
+"..\output\lcd.o"
+"..\output\gizwits_product.o"
+"..\output\gizwits_protocol.o"
+"..\output\common.o"
+"..\output\datapointtools.o"
+"..\output\ringbuffer.o"
+--strict --scatter "..\output\stm32f051Demo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\stm32f051Demo.map" -o ..\output\stm32f051Demo.axf
