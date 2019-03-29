@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\sys_rcc.o"
+".\objects\systick.o"
+".\objects\usart_driver.o"
+".\objects\mygpio.o"
+".\objects\mykey.o"
+".\objects\mytimer.o"
+".\objects\myble.o"
+".\objects\stm32f10x_it.o"
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\misc.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_flash.o"
+--strict --scatter ".\Objects\stm1809Demo.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\stm1809Demo.map" -o .\Objects\stm1809Demo.axf
